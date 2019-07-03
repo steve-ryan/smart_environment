@@ -1,4 +1,7 @@
 .form-group{
-    display: table;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+justify-content: center;
+width: inherit;
 }
