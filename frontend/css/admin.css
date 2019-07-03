@@ -5,3 +5,7 @@
 justify-content: center;
 width: inherit;
 }
+
+a{
+    text-decoration: "none"!important;
+}
