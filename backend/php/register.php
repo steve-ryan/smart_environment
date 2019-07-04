@@ -34,6 +34,21 @@ if(isset($_POST['password_1'] )){
         echo "Your password values dont match";
         exit();
     }
+    $client_check = "SELECT * FROM clients WHERE name='$username' OR email='$email' LIMIT 1";
+    $result = mysqli_query($conn, $client_check);
+    $client = mysqli_fetch_assoc($result);
+
+     if ($client) {
+    if ($client['name'] === $username) {
+      echo "Username already exists";
+      exit();
+    }
+
+    if ($client['email'] === $email) {
+      echo "email already exists";
+      exit();
+    }
+  }
 
 }
 
