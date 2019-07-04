@@ -6,14 +6,16 @@ $(document).ready(()=>{
     $("[rel='login']").on("click",()=>{
         $("[rel='root']").load("./../html/login.html");
     })
-
-    $("[rel='backreg']").on("click",(evt)=>{
-        
-        evt.preventDefault();
-        evt.stopPropagation();
-        evt.stopImmediatePropagation();
-        $("[rel='desp']").load("./../html/register.html");
-    });
-
     
+
+    $("[rel='register']").on("click",()=>{
+        $("[rel='root']").load("../../backend/php/register.php")
+    })
+
+    $("[rel='login']").on("click",()=>{
+        $("[rel='root']").load("../../backend/php/login.php")
+    })
 });
+
+
+
