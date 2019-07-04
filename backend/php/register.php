@@ -1,5 +1,5 @@
 <?php
-define("PASSWORD_ARGON2I",2);
+require("./connection.php");
 $hostname="localhost";
 $username="root";
 $password="";
@@ -10,17 +10,23 @@ $conn=new mysqli($hostname,$username,$password,$database);
   if($conn->connect_error){
       die ("connection failed to establish".$conn->connect_error);
   }
-  $db1="CREATE DATABASE IF NOT EXISTS smart_environment";
-  $dbe="USE smart_environment";
-  $conn->query($db1);
-  $conn->query($dbe);
-
-  if(isset($_POST['reg_user'])){
+  
+  if(isset($_POST['reg_user'] )){
+    if(isset($_POST['username'] )){
 
     $username=mysqli_real_escape_string($conn,$_POST["username"]);
+
+
+}
+if(isset($_POST['password_1'] )){
+    $password=mysqli_real_escape_string($conn,$_POST["password_1"]);
+    
+
+
+}
     $phone=mysqli_real_escape_string($conn,$_POST["phone"]);
     $email=mysqli_real_escape_string($conn,$_POST["email"]);
-    $password=mysqli_real_escape_string($conn,$_POST["password_1"]);
+    
     $confirm_password=mysqli_real_escape_string($conn,$_POST["password_2"]);
     
 
@@ -66,7 +72,7 @@ $state->bind_param("siss",$username,$phone,$email,$encry);
 $username=$_POST["username"];
 $phone=$_POST["phone"];
 $email=$_POST["email"];
-$password=$_POST["password"];
+$password=$_POST["password_1"];
 $encry=md5($password);
 $state->execute();
 

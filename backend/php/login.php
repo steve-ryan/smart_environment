@@ -1,5 +1,16 @@
 <?php
    require("./connection.php");
+
+   $hostname="localhost";
+$username="root";
+$password="";
+$database="smart_environment";
+
+//creating connection
+$conn=new mysqli($hostname,$username,$password,$database);
+  if($conn->connect_error){
+      die ("connection failed to establish".$conn->connect_error);
+  }
       
      $take="SELECT phone_no,name,password FROM clients";
 

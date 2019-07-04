@@ -2,15 +2,21 @@
 $hostname="localhost";
 $username="root";  
 $password="";       
-$database="smart_environment"; 
 
-$conn = new mysqli($hostname,$username,$password,$database);
+
+$conn = new mysqli($hostname,$username,$password);
 
 if($conn->connect_error)
 {
     die('Connection Failed'.$conn->connect_error);
-} else {
-    //echo "connection SUCCEEDED";
+} 
+
+$sql = "CREATE DATABASE IF NOT EXISTS smart_environment";
+
+if($conn->query($sql)=== TRUE){
+   //echo "smart_environment database created";
+} else{
+    echo "failed creating database".$conn->error;
 }
 
 
