@@ -1,8 +1,8 @@
 <!DOCTYPE html>
  <head>
-        <link rel="stylesheet" href="../css/client.css">
-        <script src="./../js/nav.js"></script>
-
+        <link rel="stylesheet" href="../../frontend/css/client.css">
+        <script src="./../../frontend/js/jq.js"></script>
+        <script src="./../../frontend/js/nav.js"></script>
  </head>
      
         
