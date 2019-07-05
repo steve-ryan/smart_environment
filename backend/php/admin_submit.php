@@ -25,7 +25,7 @@
 	}
 
 	$stmt = $conn->prepare("INSERT INTO seedlings (category, s_name, price, path, description) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("sisss",$categories, $name, $price, $path, $description);
+    $stmt->bind_param("ssiss",$categories, $name, $price, $path, $description);
     
     $categories = $_POST["categories"];
     $name = $_POST["name"];
