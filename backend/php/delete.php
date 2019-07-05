@@ -1,10 +1,6 @@
 <?php
 
 $id = $_GET['id'];
-//Connect DB
-//Create query based on the ID passed from you table
-//query : delete where Staff_id = $id
-// on success delete : redirect the page to original page using header() method
 require("./connection.php");
 	$servername = "localhost";
 	$username = "root";
