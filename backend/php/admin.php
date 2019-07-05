@@ -74,7 +74,7 @@ while ($row = mysqli_fetch_array($query)) {
        <td>{$row['s_name']}</td>
        <td>{$row['description']}</td>
        <td>{$row['price']}</td>
-       <td><button>x</button></td>
+       <td><a href='delete.php?id=".$row['seedling_id']."'>X</a></td>
    </tr>\n";
 }
 
