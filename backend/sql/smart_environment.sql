@@ -15,7 +15,7 @@ seedling_id INT(11) NOT NULL AUTO_INCREMENT,
 category VARCHAR(255) NOT NULL,
 s_name VARCHAR(255) NOT NULL,
 price INT(20) NOT NULL ,
-path TEXT NOT NULL,
+path VARCHAR(80) NOT NULL,
 description TEXT NOT NULL,
 PRIMARY KEY(seedling_id)
 
