@@ -37,7 +37,7 @@
             </div>
             <div class="form-group col-md-2">
                 <label>Price</label>
-                <input type="text" class="form-control" required>
+                <input type="text" name="price" class="form-control" required>
             </div>
         </div>
         <div class="form-group">

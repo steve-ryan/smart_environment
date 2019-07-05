@@ -22,7 +22,23 @@
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
-	}
+    }
+    
+    $tbl="CREATE TABLE IF NOT EXISTS seedlings(
+        seedling_id INT(11) NOT NULL AUTO_INCREMENT,
+        category VARCHAR(255) NOT NULL,
+        s_name VARCHAR(255) NOT NULL,
+        price INT(20) NOT NULL ,
+        path VARCHAR(80) NOT NULL,
+        description TEXT NOT NULL,
+        PRIMARY KEY(seedling_id)
+        
+        )";
+
+        if(!$conn->query($tbl)){
+            echo "Database is down";
+        }
+         
 
 	$stmt = $conn->prepare("INSERT INTO seedlings (category, s_name, price, path, description) VALUES (?, ?, ?, ?, ?)");
     $stmt->bind_param("ssiss",$categories, $name, $price, $path, $description);
@@ -30,7 +46,7 @@
     $categories = $_POST["categories"];
     $name = $_POST["name"];
     $description = $_POST["description"];
-    $price = intval($_POST["price"]);
+    $price = $_POST["price"];
     $path = $_POST["path"];
 	$stmt->execute();
 	
