@@ -12,6 +12,7 @@ PRIMARY KEY(client_id)
 );
 CREATE TABLE IF NOT EXISTS seedlings(
 seedling_id INT(11) NOT NULL AUTO_INCREMENT,
+category VARCHAR(255) NOT NULL,
 s_name VARCHAR(255) NOT NULL,
 price INT(20) NOT NULL ,
 path TEXT NOT NULL,
