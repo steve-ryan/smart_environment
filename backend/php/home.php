@@ -20,7 +20,7 @@ $rows=$result->fetch_all(MYSQLI_ASSOC);
 $json_array=array();
 
 
-$json_array[]=$rows;
+$json_array=$rows;
 echo json_encode($json_array);
   //$y++;
  //}

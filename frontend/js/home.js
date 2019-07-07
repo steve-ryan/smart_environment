@@ -10,7 +10,7 @@ $(document).ready(()=>{
            
         // let x=0;
         // let y =obj.length;
-         
+         console.log(obj[0][1])
     
     $("[rel='item-head']").append(`<h1 class="category-head">FRUIT TREES</h1>`);
    // while(x<y){
@@ -20,9 +20,9 @@ $(document).ready(()=>{
             let details=item.description;
             let come ="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.kO0LY2D7pCGQoHnyur0s2wHaEK%26pid%3DApi&f=1"
 
-            console.log(item);
+            console.log(item[0]);
             console.log(item.s_name);
-             $.each(item,()=>{
+            // $.each(item,()=>{
             return(
                 
                 $("[rel='root']").append(
@@ -32,7 +32,7 @@ $(document).ready(()=>{
                     `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details"/></br></br>`+
                     `<input type="button" rel="buy" value="BUY" class="buy"/>\n`
                     ));
-                });
+               // });
             
         });
     
