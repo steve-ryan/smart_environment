@@ -6,7 +6,9 @@
     font-size: 120%;
     background: #F8F8FF;
   }
-  
+  .bg-dark {
+    background-color: #154d11 !important;
+  }
   .header {
     width: 30%;
     margin: 50px auto 0px;
@@ -80,5 +82,6 @@ justify-content: center;
     background-color: green;
     height: 50px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: -15px;
+    color:white;
   }
