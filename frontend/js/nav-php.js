@@ -9,11 +9,11 @@ $(document).ready(()=>{
     
 
     $("[rel='register']").on("click",()=>{
-        $("[rel='root']").load("../../backend/php/register.php")
+        $("[rel='root']").load("./backend/php/register.php")
     })
 
     $("[rel='login']").on("click",()=>{
-        $("[rel='root']").load("../../backend/php/login_client.php")
+        $("[rel='root']").load("./backend/php/login_client.php")
     })
 });
 
