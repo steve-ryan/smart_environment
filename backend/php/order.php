@@ -35,7 +35,7 @@ include_once("connection.php");
             </thead>
             <tbody>
                     <?php
-                    $sql = "SELECT s_name,  description, price FROM seedlings WHERE category='fruit'";
+                    $sql = "SELECT s_name,  description, price, path FROM seedlings";
                     $resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));			
                     while( $product = mysqli_fetch_assoc($resultset) ) {
                 ?>
@@ -43,7 +43,7 @@ include_once("connection.php");
                <tr>
                     <td data-th="Product" class="product">
                         <div class="row">
-                            <div class="col-sm-2 hidden-xs"><img src=".$product['image']?>" alt="..."
+                            <div class="col-sm-2 hidden-xs"><img src="<?php echo $product['path'];?>" alt="..." width="70" height="70"
                                     class="img-responsive" /></div>
                             <div class="col-sm-10">
                                 <h4 class="nomargin"><?php echo $product['s_name'] ?></h4>
