@@ -1,4 +1,4 @@
-$(document).ready(()=>{
+$(document).ready(() => {
 
     // $("[rel='register']").on("click",()=>{
     //     $("[rel='root']").load("./../html/register.html");
@@ -6,15 +6,20 @@ $(document).ready(()=>{
     // $("[rel='login']").on("click",()=>{
     //     $("[rel='root']").load("./../html/login.html");
     // })
-    
 
-    $("[rel='register']").on("click",()=>{
-        $("[rel='root']").load("./../../backend/php/register_clients.php")
+
+    $("[rel='register']").on("click", () => {
+        $("[rel='root']").load("./backend/php/register_clients.php")
     })
 
-    $("[rel='login']").on("click",()=>{
-        $("[rel='root']").load("./../../backend/php/login_client.php")
+    $("[rel='login']").on("click", () => {
+        $("[rel='root']").load("./backend/php/login_client.php")
     })
+
+    $("[rel='home']").on("click", () => {
+        $("[rel='root']").load("./backend/php/home_client.php")
+    })
+
 });
 
 
