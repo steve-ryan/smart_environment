@@ -52,23 +52,14 @@ $(document).ready(()=>{
        success: (data) =>{
 
         const obj=JSON.parse(data);
-        //$("[rel='root']").html(data);
-
-        let x=0;
-        let y =obj.length;
-         
-    console.log(obj.length)
+       
     $("[rel='item-head']").append(`<h1 class="category-head">FRUIT TREES</h1>`);
-     //while(x<y){
+     
         obj.map(item=>{
             let img=item.path;
             let name=item.s_name;
             let details=item.description;
 
-            console.log(item);
-            $.each(item, ()=> { 
-                 
-            
         
             return(
                 
@@ -81,15 +72,13 @@ $(document).ready(()=>{
                     ));
 
                 });
-        });
-       // x++;
+       
     }
-       //}
+      
    });
 
 
- //alert("am live")
-    //console.log(me);
+ 
     
 
     $("[rel='buy']").on("click",()=>{

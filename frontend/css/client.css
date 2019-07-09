@@ -53,28 +53,35 @@ form, .content {
   border-radius: 5px;
 }
 
+.buy{
+  margin-top: 0px;
+}
+
 .root-h{
   display: flex;
-  margin:0 20px;
+  margin:10px 10px;
   flex-direction: row;
   width: 0 auto;
   flex-wrap: wrap;
 }
 .img-parent{
-  width: 25px;
-  height: 25px;
+  padding-right: 0px;
+  margin-top: 20px;
   object-fit: cover;
-  object-position: fixed;
+ 
+  
 }
 .container-main{
   display: flex;  
- /* flex-wrap: wrap;*/
+ flex-wrap: wrap;
   flex-direction: column;
-  width: 320px;
+  width: 790px;
   
 }
 .container{
-  margin-left: 150px;
+  margin-bottom: 40px;
+  margin-left: 180px;
+  
   
 }
 .more-details{
