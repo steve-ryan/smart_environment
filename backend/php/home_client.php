@@ -16,7 +16,7 @@
         <h1>MEDICINAL PLANTS AND ITS  USES</h1>
         <img src="" alt="am here" rel="img-disp"> -->
         <div rel="item-head" class="item-head"></div>
-        <div rel="root" class="root"></div>
+        <div rel="root-h" class="root-h"></div>
        
         <!-- <p>TREE type</p>
         <input type="button" value="MORE DETAILS"><br>

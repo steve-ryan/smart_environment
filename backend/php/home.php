@@ -10,7 +10,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$quer="SELECT * FROM seedlings";
+$quer="SELECT * FROM seedlings WHERE category='fruit'";
 
 $result=$conn->query($quer);
 $rows=$result->fetch_all(MYSQLI_ASSOC);
