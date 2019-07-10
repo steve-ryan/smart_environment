@@ -59,19 +59,37 @@ $(document).ready(()=>{
             let img=item.path;
             let name=item.s_name;
             let details=item.description;
+            
+
+            function me(you){
+                
+                $("[rel='more-details']").on("click",()=>{
+                    // alert(you)
+                   
+                    $("[rel='try']").append(you);
+                    $("[rel='more-details']").on("click",()=>{
+                        $("[rel='try']").remove();
+                    });
+                })
+            
+            }
 
         
             return(
                 
+                
                 $("[rel='root-h']").append(
                     
                     '<div class="container-main"><div class="img-parent"><img src="'+img+`" alt="image not found" ></div></br>`+
-                    `<div class="container"><p><h3>`+name+`</h3></p> </br>`+
-                    `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details"/></br></br>`+
+                    `<div class="container"><p><h3>`+name+`</h3></p> </br><div rel="try"></div>`+
+                    `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details" onclick="`+me(details)+`"/></br></br>`+
                     `<input type="button" rel="buy" value="BUY" class="buy"/></div></div>`
                     ));
 
                 });
+
+
+                
        
     }
       
