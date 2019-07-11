@@ -80,8 +80,8 @@ $(document).ready(()=>{
                 
                 $("[rel='root-h']").append(
                     
-                    '<div class="container-main"><div class="img-parent"><img src="'+img+`" alt="image not found" ></div></br>`+
-                    `<div class="container"><p><h3>`+name+`</h3></p> </br><div rel="try"></div>`+
+                    '<div class="card"><div class="container-main"><img class="card-img-top"src="'+img+`" alt="image not found" ></br>`+
+                    `<div class="container" class="card-title"><p><h3>`+name+`</h3></p> </br><div rel="try"></div>`+
                     `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details" onclick="`+me(details)+`"/></br></br>`+
                     `<input type="button" rel="buy" value="BUY" class="buy"/></div></div>`
                     ));
