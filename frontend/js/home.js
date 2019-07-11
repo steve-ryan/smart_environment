@@ -60,20 +60,9 @@ $(document).ready(()=>{
             let name=item.s_name;
             let details=item.description;
             
-
-            function me(you){
-                
-                $("[rel='more-details']").on("click",()=>{
-                    // alert(you)
-                   
-                    $("[rel='try']").append(you);
-                    $("[rel='more-details']").on("click",()=>{
-                        $("[rel='try']").remove();
-                    });
-                })
+          
             
-            }
-
+                      
         
             return(
                 
@@ -81,27 +70,35 @@ $(document).ready(()=>{
                 $("[rel='root-h']").append(
                     
                     '<div class="container-main"><div class="img-parent"><img src="'+img+`" alt="image not found" ></div></br>`+
-                    `<div class="container"><p><h3>`+name+`</h3></p> </br><div rel="try"></div>`+
-                    `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details" onclick="`+me(details)+`"/></br></br>`+
+                    `<div class="container"><p><h3>`+name+`</h3></p> </br><div rel="try">`+ details+`</div>`+
+                    `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details" /></br></br>`+
                     `<input type="button" rel="buy" value="BUY" class="buy"/></div></div>`
                     ));
 
-                });
+            });
+
+            $("[rel='buy']").on("click",()=>{
+       
+      
+                $("[rel='root-h']").load("./../../backend/php/displayorder.php");
+            });
+
+            $("[rel='try']").hide();
+
+            $("[rel='more-details']").on("click",()=>{
+                $("[rel='try']").show();
+
+                $("[rel='more-details']").on("click",()=>{
+                    $("[rel='try']").hide();
+                })
+            })
 
 
+            
                 
        
     }
       
    });
 
-
- 
-    
-
-    $("[rel='buy']").on("click",()=>{
-       
-      
-        $("[rel='root']").append("<p>kenya</p>");
-    });
 });
