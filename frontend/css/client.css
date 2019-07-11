@@ -75,15 +75,10 @@ form, .content {
   display: flex;  
  flex-wrap: wrap;
   flex-direction: column;
-  width: 790px;
+  width: 290px;
   
 }
-.container{
-  margin-bottom: 40px;
-  margin-left: 180px;
-  
-  
-}
+
 .more-details{
   padding: 10px;
   font-size: 15px;
@@ -101,4 +96,14 @@ form, .content {
   text-align: center;
   margin-top: -15px;
   color:white;
+}
+.card{
+  padding: 0px 20px;
+}
+.category-head{
+  margin-top: 10px;
+}
+.card-img-top{
+  height: 70px;
+  width: 130px;
 }
