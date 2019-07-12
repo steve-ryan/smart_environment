@@ -9,7 +9,7 @@
     <title>Medicinal plants</title>
     <link rel="stylesheet" href="./../../frontend/css/client.css">
     <script src="./../../frontend/js/jq.js"></script>
-    <script src="./../../frontend/js/home.js"></script>
+    <script src="./../../frontend/js/fruit.js"></script>
 </head>
 <body>
     
