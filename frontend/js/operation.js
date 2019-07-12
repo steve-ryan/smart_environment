@@ -61,7 +61,7 @@ console.table(amount);
                       </td>
                       <td data-th="Price">`+amount+`</td>
                       <td data-th="Quantity">
-                          <input type="number" class="form-control text-center" name="quantity" value="" min="1" id="valos" rel="valo">
+                          <input type="number" class="form-control text-center" name="quantity" value="1" min="1" id="valos" rel="valo">
                       </td>
                       <td data-th="Subtotal" class="text-center">`+ amount * calc+`</td>
                       <td data-th="remove" class="text-center"><button type="button" class="remove-item" rel="remove-item">X</button></td>
@@ -74,10 +74,15 @@ console.table(amount);
             </table>
               
               `
+              
                 
                  ));
 
+
+                
              });
+             
+
 
 
              

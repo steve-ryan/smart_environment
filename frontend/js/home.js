@@ -69,15 +69,9 @@ $(document).ready(()=>{
                 
                 $("[rel='root-h']").append(
                     
-<<<<<<< HEAD
-                    '<div class="container-main"><div class="img-parent"><img src="'+img+`" alt="image not found" ></div></br>`+
-                    `<div class="container"><p><h3>`+name+`</h3></p> </br><div rel="try">`+ details+`</div>`+
+                    '<div class="card"><div class="container-main"><img src="'+img+`" alt="image not found" class="card-img-top"  ></div></br>`+
+                    `<div class="container" class="card-title"><p><h3>`+name+`</h3></p> </br><div rel="try">`+ details+`</div>`+
                     `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details" /></br></br>`+
-=======
-                    '<div class="card"><div class="container-main"><img class="card-img-top"src="'+img+`" alt="image not found" ></br>`+
-                    `<div class="container" class="card-title"><p><h3>`+name+`</h3></p> </br><div rel="try"></div>`+
-                    `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details" onclick="`+me(details)+`"/></br></br>`+
->>>>>>> 1a1e010f53ebcb99f93aee9fa61330a6c3639221
                     `<input type="button" rel="buy" value="BUY" class="buy"/></div></div>`
                     ));
 
