@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./../../frontend/css/client.css">
     <script src="./../../frontend/js/jq.js"></script>
     <script src="./../../frontend/js/home.js"></script>
+    <script src="./../../frontend/js/nav.js"></script>
 </head>
 <body>
     

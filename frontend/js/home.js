@@ -51,9 +51,11 @@ $(document).ready(()=>{
        dataType: "text",
        success: (data) =>{
 
+        alert("being seen")
+
         const obj=JSON.parse(data);
        
-    $("[rel='item-head']").append(`<h1 class="category-head">FRUIT TREES</h1>`);
+    $("[rel='root']").append(`<h1 class="category-head">FRUIT TREES</h1>`);
      
         obj.map(item=>{
             let img=item.path;

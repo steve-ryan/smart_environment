@@ -39,7 +39,7 @@ $conn=new mysqli($hostname,$username,$password,$database);
                     
 
                 }  elseif($user==="admin" && $pass==="admin"){
-                    echo "logged as "+"admin";
+                   // echo "logged as "+"admin";
                     require("./admin.php");
                     exit();
                     

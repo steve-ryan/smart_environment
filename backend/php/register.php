@@ -24,6 +24,8 @@ if(isset($_POST['password_1'] )){
 
 
 }
+
+
     $phone=mysqli_real_escape_string($conn,$_POST["phone"]);
     $email=mysqli_real_escape_string($conn,$_POST["email"]);
     
@@ -83,16 +85,17 @@ VALUES(?,?,?,?)");
 $state->bind_param("siss",$username,$phone,$email,$encry);
 
 //setting parameters to be executed
+if(isset($_POST['username'])&& isset($_POST['phone'])){
 
-$username=$_POST["username"];
-$phone=$_POST["phone"];
-$email=$_POST["email"];
-$password=$_POST["password_1"];
+$username=mysqli_real_escape_string($conn,$_POST["username"]);
+$phone=mysqli_real_escape_string($conn,$_POST["phone"]);
+$email=mysqli_real_escape_string($conn,$_POST["email"]);
+$password=mysqli_real_escape_string($conn,$_POST["password_1"]);
 $encry=md5($password);
-$state->execute();
+$state->execute();}
 
   
-
+require("./login_client.php");
 //echo "client registered successfully";
 
 
