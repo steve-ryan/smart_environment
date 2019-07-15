@@ -33,7 +33,7 @@ $(document).ready(()=>{
         $("[rel='root']").load("./../../backend/php/medicinal_client.php")
     })
     $("[rel='exotic']").on("click",()=>{
-        $("[rel='exotic']").load("./../../backend/php/exotic_client.php")
+        $("[rel='root']").load("./../../backend/php/exotic_client.php")
 
     })
 

@@ -45,7 +45,7 @@ $conn=new mysqli($hostname,$username,$password,$database);
                     exit();
                     
                 } else{
-                  require("./main.php");
+                  require("./index.php");
                 echo "SIGN UP FIRST";
                 exit();
                 }
