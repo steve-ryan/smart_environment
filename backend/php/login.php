@@ -31,9 +31,10 @@ $conn=new mysqli($hostname,$username,$password,$database);
                 $dehash=md5($pass);
                 $view=$row['password'];
                 if($user===$row['phone_no']&& $dehash===$view){
-
-                    echo "<h2>Logged in as </h2>".$row['name'];
                     require("./main.php");
+
+                    echo "<h2 class='log'>Logged in as  "."".$row['name'] ."<div rel='log'></div></h2>";
+                   
                     
                     exit();
                     
@@ -54,6 +55,9 @@ $conn=new mysqli($hostname,$username,$password,$database);
             } else {
                 echo "NO REGISTERED USER FOR THE PLATFORM";
             }
-       
+
+
+            
+
     $conn->close();
  ?>

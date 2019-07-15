@@ -68,7 +68,7 @@ $tbl= "CREATE TABLE IF NOT EXISTS clients(
 
 if($conn->query($tbl)===TRUE){
    
-   require("./register_clients.php");
+   require("./login_client.php");
 
 } else{
     echo "Registration form loading failed".$conn->error;
@@ -95,7 +95,7 @@ $encry=md5($password);
 $state->execute();}
 
   
-require("./login_client.php");
+//require("./login_client.php");
 //echo "client registered successfully";
 
 

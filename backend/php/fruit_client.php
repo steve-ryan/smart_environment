@@ -9,12 +9,7 @@
     <title>Medicinal plants</title>
     <link rel="stylesheet" href="./../../frontend/css/client.css">
     <script src="./../../frontend/js/jq.js"></script>
-<<<<<<< HEAD:backend/php/home_client.php
-    <script src="./../../frontend/js/home.js"></script>
-    <script src="./../../frontend/js/nav.js"></script>
-=======
     <script src="./../../frontend/js/fruit.js"></script>
->>>>>>> 67269568014eb73a65a6c46c7a430d99d7c04d75:backend/php/fruit_client.php
 </head>
 <body>
     

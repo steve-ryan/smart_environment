@@ -20,6 +20,8 @@ body {
   border-radius: 10px 10px 0px 0px;
   padding: 20px;
 }
+
+
 form, .content {
   width: 30%;
   margin: 0px auto;
@@ -35,6 +37,39 @@ form, .content {
   display: block;
   text-align: left;
   margin: 3px;
+}
+
+.log{
+ 
+  z-index: 10px;
+  color: red;
+  margin-top: -70px;
+  padding-left: 1270px;
+  position: relative;
+  
+  
+  
+}
+.navbar-nav{
+  z-index: 45px;
+}
+div[rel='log']{
+  color: green;
+  font-size: 30px;
+  margin-top: -24px;
+  margin-left: 20px;
+  
+  
+}
+
+div button{
+  z-index: 10px;
+ 
+  margin-top: -90px;
+  position: relative;
+  margin-left: 260px;
+  color: red;
+  width: 140px
 }
 .input-group input {
   height: 30px;
@@ -52,6 +87,7 @@ form, .content {
   border: none;
   border-radius: 5px;
 }
+
 
 .buy{
   margin-top: 0px;

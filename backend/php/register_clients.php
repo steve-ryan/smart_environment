@@ -37,7 +37,7 @@
               <input type="password" name="password_2">
             </div>
             <div class="input-group">
-              <button type="submit" class="btn" name="reg_user">Register</button>
+              <button type="submit" class="btn" name="reg_user" rel="reg_user"">Register</button>
             </div>
             <p>
                 Already a member? <a href="login.html">Sign in</a>

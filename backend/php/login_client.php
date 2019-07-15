@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="../../frontend/css/client.css">
         <script src="./../../frontend/js/jq.js"></script>
         <script src="./../../frontend/js/nav.js"></script>
+        <script src="./../../frontend/js/logging.js"></script>
  </head>
      
         
@@ -21,7 +22,7 @@
                 <input type="password" name="password"/>
             </div>
             <div class="input-group">
-                <button type="submit" class="btn" name="login_user">Login</button>
+                <button type="submit" class="btn" name="login_user" rel="login_user">Login</button>
             </div>
             <p>
                 Not yet a member? <a href="register.html" rel="backreg">Sign up</a>

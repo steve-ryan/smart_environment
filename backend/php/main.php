@@ -17,10 +17,11 @@
    <link rel="stylesheet" href="./../../frontend/css/client.css">
    <script src="./../../frontend/js/jquery-3.4.1.min.js"></script>
    <script src="./../../frontend/js/jq.js"></script>
-    <!-- <script src="./bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./../../frontend/js/nav.js"></script>
     <script src="./../../frontend/js/nav-php.js"></script>
-    <script src="./../../frontend/js/home.js"></script>
+    <script src="./../../frontend/js/fruit.js"></script>
+    <!-- <script src="./../../frontend/js/logging.js"></script> -->
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                     <a href="#" class="nav-item nav-link" rel="indiginious">Indiginous</a>
                     <a href="#" class="nav-item nav-link" rel="tree-ben">Tree benefits</a>
                 </div>
-                <div class="navbar-nav ml-auto">
+                <div class="navbar-nav ml-auto" rel="nav-key">
                     <a href="#" class="nav-item nav-link" rel="register">Register</a>
                     <a href="#" class="nav-item nav-link" rel="login">Login</a>
                 </div>
