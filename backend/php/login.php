@@ -33,7 +33,7 @@ $conn=new mysqli($hostname,$username,$password,$database);
                 if($user===$row['phone_no']&& $dehash===$view){
                     require("./main.php");
 
-                    echo "<h2 class='log'>Logged in as  "."".$row['name'] ."<div rel='log'></div></h2>";
+                    echo "<h2 class='log'>Logged in as  "."".$row['name'] ."<div rel='log'><button rel='btn-log' class='btn-log'>log out</button></div></h2>";
                    
                     
                     exit();
@@ -44,18 +44,20 @@ $conn=new mysqli($hostname,$username,$password,$database);
                     require("./admin.php");
                     exit();
                     
-                }
                 } else{
-
+                  require("./main.php");
                 echo "SIGN UP FIRST";
                 exit();
                 }
-                $count++;}
+               
+            }
+            $count++;
 
-            } else {
+            } 
+        }else {
                 echo "NO REGISTERED USER FOR THE PLATFORM";
             }
-
+      
 
             
 
