@@ -31,9 +31,9 @@ $conn=new mysqli($hostname,$username,$password,$database);
                 $dehash=md5($pass);
                 $view=$row['password'];
                 if($user===$row['phone_no']&& $dehash===$view){
-                    require("./main.php");
+                    require("./index.php");
 
-                    echo "<h2 class='log'>Logged in as  "."".$row['name'] ."<div rel='log'></div></h2>";
+                    echo "<p class='log'>Logged in as  "."".$row['name'] ."<div rel='log'></div></p>";
                    
                     
                     exit();
