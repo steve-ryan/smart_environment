@@ -40,7 +40,7 @@
               <button type="submit" class="btn" name="reg_user" rel="reg_user"">Register</button>
             </div>
             <p>
-                Already a member? <a href="login.html">Sign in</a>
+                Already a member? <a href="./../../backend/php/login_client.php" rel="regfro">Sign in</a>
             </p>
         </form>
         

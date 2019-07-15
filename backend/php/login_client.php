@@ -25,7 +25,7 @@
                 <button type="submit" class="btn" name="login_user" rel="login_user">Login</button>
             </div>
             <p>
-                Not yet a member? <a href="register.html" rel="backreg">Sign up</a>
+                Not yet a member? <a href="./../../backend/php/register_clients" rel="backreg">Sign up</a>
             </p>
         </form>
         <div rel='desp'></div>

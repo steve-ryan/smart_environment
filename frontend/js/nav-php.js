@@ -47,6 +47,9 @@ $(document).ready(()=>{
         $("[rel='root']").load("./../../backend/php/fruit_client.php")
     })
 
+
+
+
     $("[rel='btn-log']").on("click",()=>{
         $(".log").remove();
         alert("being called");
@@ -55,6 +58,17 @@ $(document).ready(()=>{
       window.location.assign("./../../backend/php/main.php");
      
      })
+
+    //  $("[rel='backreg']").on("click",(evt)=>{
+    //      evt.preventDefault();
+    //      alert("backtrack")
+    //      $("[rel='root']").load("./../../backend/php/register_clients.php");
+    //  })
+
+    //  $("[rel='regfro']").on("click",(evt)=>{
+    //      evt.preventDefault();
+    //     $("[rel='root']").load("./../../backend/php/login_client.php");
+    // })
 });
 
 
