@@ -9,8 +9,9 @@ $(document).ready(()=>{
 
    
    $("h2").append(".log");
+});
 
-   $("[rel='log']").append(`<button rel='btn-log' class='btn-log'>log out</button>`);
+   //$("[rel='log']").append(`<button rel='btn-log' class='btn-log'>log out</button>`);
 
    $("[rel='btn-log']").on("click",()=>{
       $(".log").remove();
@@ -18,6 +19,6 @@ $(document).ready(()=>{
     $("[rel='root']").load("./../../backend/php/index.php");
    
    })
-});
+
 
 })

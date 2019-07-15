@@ -46,6 +46,15 @@ $(document).ready(()=>{
     $("[rel='tree-ben']").on("click",()=>{
         $("[rel='root']").load("./../../backend/php/fruit_client.php")
     })
+
+    $("[rel='btn-log']").on("click",()=>{
+        $(".log").remove();
+        alert("being called");
+     $("[rel='log']").remove();
+     $("[rel='root']").remove();
+      window.location.assign("./../../backend/php/index.php");
+     
+     })
 });
 
 
