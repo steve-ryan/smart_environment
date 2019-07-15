@@ -1,15 +1,13 @@
 $(document).ready(()=>{
     $.ajax({
        type: "get",
-       url: "./../../backend/php/home.php",
+       url: "./../../backend/php/exotic.php",
        dataType: "text",
        success: (data) =>{
 
-        alert("being seen")
-
         const obj=JSON.parse(data);
        
-    $("[rel='root']").append(`<h1 class="category-head">FRUIT TREES</h1>`);
+    $("[rel='item-head']").append(`<h1 class="category-head">EXOTIC TREES</h1>`);
      
         obj.map(item=>{
             let img=item.path;

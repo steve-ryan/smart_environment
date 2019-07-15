@@ -30,10 +30,10 @@ $(document).ready(()=>{
         $("[rel='root']").load("./../../backend/php/fruit_client.php")
     })
     $("[rel='medicinal']").on("click",()=>{
-        $("[rel='root']").load("./../../backend/php/fruit_client.php")
+        $("[rel='root']").load("./../../backend/php/medicinal_client.php")
     })
     $("[rel='exotic']").on("click",()=>{
-        $("[rel='exotic']").load("./../../backend/php/fruit_client.php")
+        $("[rel='exotic']").load("./../../backend/php/exotic_client.php")
 
     })
 
@@ -41,7 +41,7 @@ $(document).ready(()=>{
         $("[rel='root']").load("./../../backend/php/fruit_client.php")
     })
     $("[rel='indiginious']").on("click",()=>{
-        $("[rel='root']").load("./../../backend/php/fruit_client.php")
+        $("[rel='root']").load("./../../backend/php/indiginous_client.php")
     })
     $("[rel='tree-ben']").on("click",()=>{
         $("[rel='root']").load("./../../backend/php/fruit_client.php")
@@ -55,7 +55,7 @@ $(document).ready(()=>{
         alert("being called");
      $("[rel='log']").remove();
      $("[rel='root']").remove();
-      window.location.assign("./../../backend/php/main.php");
+      window.location.assign("./../../backend/php/index.php");
      
      })
 

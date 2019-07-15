@@ -14,10 +14,9 @@ $(document).ready(()=>{
    //$("[rel='log']").append(`<button rel='btn-log' class='btn-log'>log out</button>`);
 
    $("[rel='btn-log']").on("click",()=>{
-      //$(".log").remove();
-      alert("being called");
-   // $("[rel='log']").remove();
-    //$("[rel='root']").load("./../../backend/php/main.php");
+      $(".log").remove();
+    $("[rel='log']").remove();
+    $("[rel='root']").load("./../../backend/php/index.php");
    
    })
 
