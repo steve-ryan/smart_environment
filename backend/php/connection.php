@@ -2,9 +2,9 @@
 $hostname="localhost";
 $username="root";  
 $password="";       
-$dbname="smart_environment";
 
-$conn = new mysqli($hostname,$username,$password,$dbname);
+
+$conn = new mysqli($hostname,$username,$password);
 
 if($conn->connect_error)
 {
