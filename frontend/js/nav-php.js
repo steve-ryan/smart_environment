@@ -6,12 +6,13 @@ $(document).ready(()=>{
     // $("[rel='login']").on("click",()=>{
     //     $("[rel='root']").load("./../html/login.html");
     // })
-    
+   //$("h2.log").hide(); 
 
     $("[rel='register']").on("click",(evt)=>{
         evt.preventDefault();
         evt.stopPropagation();
         evt.stopImmediatePropagation();
+        $(".redisplay").remove();
         $("[rel='root']").load("./../../backend/php/register_clients.php");
        $("[rel='reg_user']").on("click",(evt)=>{
            evt.preventDefault();
@@ -22,28 +23,77 @@ $(document).ready(()=>{
     })
 
     $("[rel='login']").on("click",()=>{
+        $(".redisplay").remove();
         $("[rel='root']").load("./../../backend/php/login_client.php");
       
     })
 
     $("[rel='home']").on("click",()=>{
+        $("h2.log").css({
+            "z-index": "10px",
+           " color": "red",
+           "font-size": "19px",
+           "margin-top": "-72px",
+           "padding-left": "1270px",
+           "position": "relative"
+        });
         $("[rel='root']").load("./../../backend/php/fruit_client.php")
     })
     $("[rel='medicinal']").on("click",()=>{
+        $("h2.log").css({
+            "z-index": "10px",
+           " color": "red",
+           "font-size": "19px",
+           "margin-top": "-72px",
+           "padding-left": "1270px",
+           "position": "relative"
+        });
         $("[rel='root']").load("./../../backend/php/medicinal_client.php")
     })
     $("[rel='exotic']").on("click",()=>{
+        $("h2.log").css({
+            "z-index": "10px",
+           " color": "red",
+           "font-size": "19px",
+           "margin-top": "-72px",
+           "padding-left": "1270px",
+           "position": "relative"
+        });
         $("[rel='root']").load("./../../backend/php/exotic_client.php")
 
     })
 
     $("[rel='fruits']").on("click",()=>{
+        $("h2.log").css({
+            "z-index": "10px",
+           " color": "red",
+           "font-size": "19px",
+           "margin-top": "-72px",
+           "padding-left": "1270px",
+           "position": "relative"
+        });
         $("[rel='root']").load("./../../backend/php/fruit_client.php")
     })
     $("[rel='indiginious']").on("click",()=>{
+        $("h2.log").css({
+            "z-index": "10px",
+           " color": "red",
+           "font-size": "19px",
+           "margin-top": "-72px",
+           "padding-left": "1270px",
+           "position": "relative"
+        });
         $("[rel='root']").load("./../../backend/php/indiginous_client.php")
     })
     $("[rel='tree-ben']").on("click",()=>{
+        $("h2.log").css({
+            "z-index": "10px",
+           " color": "red",
+           "font-size": "19px",
+           "margin-top": "-72px",
+           "padding-left": "1270px",
+           "position": "relative"
+        });
         $("[rel='root']").load("./../../backend/php/fruit_client.php")
     })
 
@@ -52,7 +102,7 @@ $(document).ready(()=>{
 
     $("[rel='btn-log']").on("click",()=>{
         $(".log").remove();
-        alert("being called");
+        
      $("[rel='log']").remove();
      $("[rel='root']").remove();
       window.location.assign("./../../backend/php/index.php");

@@ -33,21 +33,24 @@ if(isset($_POST['password_1'] )){
     
 
     if($password != $confirm_password){
-        echo "Your password values dont match";
+        require("./index.php");
+        echo "<p class='redisplay'>Your password values dont match</p>";
         exit();
     }
-    $client_check = "SELECT * FROM clients WHERE name='$username' OR email='$email' LIMIT 1";
+    $client_check = "SELECT * FROM clients WHERE name='$username' OR email='$email' ";
     $result = mysqli_query($conn, $client_check);
     $client = mysqli_fetch_assoc($result);
 
      if ($client) {
     if ($client['name'] === $username) {
-      echo "Username already exists";
+        require("./index.php");
+      echo "<p class='redisplay'>Username already exists</p>";
       exit();
     }
 
     if ($client['email'] === $email) {
-      echo "email already exists";
+        require("./index.php");
+      echo "<p class='redisplay'>email already exists</p>";
       exit();
     }
   }
