@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="./../../bootstrap/css/bootstrap.min.css">
    <link rel="stylesheet" href="./../../frontend/css/admin.css">
    <link rel="stylesheet" href="./../../frontend/css/client.css">
+   <link rel="stylesheet" href="./../../frontend/css/home.css">
    <script src="./../../frontend/js/jquery-3.4.1.min.js"></script>
    <script src="./../../frontend/js/jq.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
@@ -33,7 +34,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link active" rel="home">Home</a>
+                    <a href="#" class="nav-item nav-link" rel="home">Home</a>
                     <a href="#" class="nav-item nav-link" rel="medicinal">Medicinal</a>
                     <a href="#" class="nav-item nav-link" rel="exotic">Exotic</a>
                     <a href="#" class="nav-item nav-link" rel="fruits">Fruits</a>
