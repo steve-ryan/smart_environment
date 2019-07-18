@@ -21,6 +21,14 @@ body {
   padding: 20px;
 }
 
+.redisplay{
+  display: flex;
+  align-content: center;
+  background-color: gold;
+  width: 230px;
+  transition: all 0.5s ease;
+}
+
 
 form, .content {
   width: 30%;
@@ -51,6 +59,8 @@ form, .content {
   
   
 }
+
+
 
 div[rel='log']{
   color: green;

@@ -1,0 +1,23 @@
+.container-home{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+.category-body{
+    text-align: center;
+}
+.category-body > a{
+    text-decoration: none;
+}
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.category-body > a button{
+
+    margin-left: 20px;
+}

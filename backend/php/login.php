@@ -46,7 +46,7 @@ $conn=new mysqli($hostname,$username,$password,$database);
                     
                 } else{
                   require("./index.php");
-                echo "SIGN UP FIRST";
+                echo "<p class='redisplay'>SIGN UP FIRST</p>";
                 exit();
                 }
                
@@ -55,7 +55,8 @@ $conn=new mysqli($hostname,$username,$password,$database);
 
             } 
         }else {
-                echo "NO REGISTERED USER FOR THE PLATFORM";
+            require("./index.php");
+                echo "<p class='redisplay'>NO REGISTERED USER FOR THE PLATFORM</p>";
             }
       
 
