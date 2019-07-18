@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../../frontend/css/home.css">
     <link rel="stylesheet" href="./../../frontend/css/client.css">
-    <script src="./frontend/js/nav-php.js"></script>
-    <!-- <script src="./../../frontend/js/jquery-3.4.1.min.js"></script>
     <script src="./../../frontend/js/jq.js"></script>
-    <script src="./frontend/js/nav.js"></script> -->
+    <script src="./frontend/js/nav-php.js"></script>
+    <!-- <script src="./frontend/js/nav.js"></script> -->
+    <script src="./../../frontend/js/jquery-3.4.1.min.js"></script>
     <script scr="./../../frontend/js/nav-php.js"></script>
 
 </head>
@@ -25,34 +25,34 @@
             </div>
             <div class="category-body">
                 <h3>Medicinal</h3>
-                <a href=""><button class="more-details" rel="medicinal">more varieties</button></a>
+                <a href=""><button class="more-details" rel="med">more varieties</button></a>
             </div>
         </div>
         <div class="category-container">
             <div class="category-img">
-                <img src="./../../frontend/images/tubers.jpg" alt="medicinal" width="250px" height="320px" />
+                <img src="./../../frontend/images/tubers.jpg" alt="indiginous" width="250px" height="320px" />
             </div>
             <div class="category-body">
                 <h3>Indiginous</h3>
-                <a href=""><button class="more-details" rel="indiginous">more varieties</button></a>
+                <a href=""><button class="more-details" rel="ind">more varieties</button></a>
             </div>
         </div>
         <div class="category-container">
             <div class="category-img">
-                <img src="./../../frontend/images/tubers.jpg" alt="medicinal" width="250px" height="320px" />
+                <img src="./../../frontend/images/tubers.jpg" alt="exotic" width="250px" height="320px" />
             </div>
             <div class="category-body">
                 <h3>Exotic</h3>
-                <a href=""><button class="more-details" rel="exotic">more varieties</button></a>
+                <a href=""><button class="more-details" rel="exo">more varieties</button></a>
             </div>
         </div>
         <div class="category-container">
             <div class="category-img">
-                <img src="./../../frontend/images/tubers.jpg" alt="medicinal" width="250px" height="320px" />
+                <img src="./../../frontend/images/tubers.jpg" alt="fruit" width="250px" height="320px" />
             </div>
             <div class="category-body">
                 <h3>Fruits</h3>
-                <a href=""><button class="more-details" rel="fruits">more varieties</button></a>
+                <a href=""><button class="more-details" rel="fru">more varieties</button></a>
             </div>
         </div>
     </div>
