@@ -23,8 +23,8 @@ $(document).ready(() => {
       "z-index": "10px",
       " color": "red",
       "font-size": "19px",
-      "margin-top": "-72px",
-      "padding-left": "1270px",
+      "margin-top": "-460px",
+      "padding-left": "1220px",
       position: "relative"
     });
     $("[rel='root']").load("./../../backend/php/home.php");
@@ -34,8 +34,8 @@ $(document).ready(() => {
       "z-index": "10px",
       " color": "red",
       "font-size": "19px",
-      "margin-top": "-72px",
-      "padding-left": "1270px",
+      "margin-top": "-380px",
+      "padding-left": "1220px",
       position: "relative"
     });
     $("[rel='root']").load("./../../backend/php/medicinal_client.php");
@@ -45,8 +45,8 @@ $(document).ready(() => {
       "z-index": "10px",
       " color": "red",
       "font-size": "19px",
-      "margin-top": "-72px",
-      "padding-left": "1270px",
+      "margin-top": "-380px",
+      "padding-left": "1220px",
       position: "relative"
     });
     $("[rel='root']").load("./../../backend/php/exotic_client.php");
@@ -57,8 +57,8 @@ $(document).ready(() => {
       "z-index": "10px",
       " color": "red",
       "font-size": "19px",
-      "margin-top": "-72px",
-      "padding-left": "1270px",
+      "margin-top": "-380px",
+      "padding-left": "1220px",
       position: "relative"
     });
     $("[rel='root']").load("./../../backend/php/fruit_client.php");
@@ -68,8 +68,8 @@ $(document).ready(() => {
       "z-index": "10px",
       " color": "red",
       "font-size": "19px",
-      "margin-top": "-72px",
-      "padding-left": "1270px",
+      "margin-top": "-380px",
+      "padding-left": "1220px",
       position: "relative"
     });
     $("[rel='root']").load("./../../backend/php/indiginous_client.php");
@@ -79,8 +79,8 @@ $(document).ready(() => {
       "z-index": "10px",
       " color": "red",
       "font-size": "19px",
-      "margin-top": "-72px",
-      "padding-left": "1270px",
+      "margin-top": "-380px",
+      "padding-left": "1220px",
       position: "relative"
     });
     $("[rel='root']").load("./../../backend/php/fruit_client.php");
@@ -112,5 +112,5 @@ $(document).ready(() => {
 //     $("[rel='root']").load("./../../backend/php/medicinal.php");
 //   });
 
-  $("[rel='root']").load("./../../backend/php/home.php");
+ // $("[rel='root']").load("./../../backend/php/home.php");
 });

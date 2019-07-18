@@ -18,17 +18,19 @@
    <link rel="stylesheet" href="./../../frontend/css/home.css">
    <script src="./../../frontend/js/jquery-3.4.1.min.js"></script>
    <script src="./../../frontend/js/jq.js"></script>
+   <script src="./../../frontend/js/home-load.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./../../frontend/js/nav.js"></script>
     <script src="./../../frontend/js/nav-php.js"></script>
     <script src="./../../frontend/js/fruit.js"></script>
+    
     <!-- <script src="./../../frontend/js/logging.js"></script> -->
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand mr-3">Smart Environment</a>
+            <a href="#" class="navbar-brand mr-3" rel="smar">Smart Environment</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
