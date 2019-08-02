@@ -1,0 +1,195 @@
+.empty{
+    padding: 10px;
+}
+
+.smrt{
+    padding-left: 70px;
+    /* background-color: rgb(109, 173, 107);
+    border-radius: 0 20px 0 20px; */
+}
+
+.smrtenv{
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    color: white;
+}
+
+.env{
+    padding-right: 20px;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.env a{
+    color: aqua;
+    text-decoration: none;
+} 
+
+.rg, .ln{
+    background-color: rgb(109, 173, 107);
+    border-radius: 0 20px 0 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/*-----slider-----*/
+.container{ 
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 63vh;
+    border-radius: 110px 0 110px 0;
+}
+
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    float: left;
+    animation: animate 30s linear infinite;
+}
+
+.container .slider .slide{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left; 
+}
+
+.container .slider .slide .caption{
+    text-align: center;
+    position: absolute;
+    bottom: 40vh;
+    left: 90px;
+    right: 70px;
+    padding: 10px; 
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.container .slider .slide .caption h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+}
+
+.container .slider .slide .caption p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 30px;
+}
+
+.container .slider .slide.slide1{
+    background: linear-gradient(rgba(58, 58, 109, 0.5),rgba(31, 31, 77, 0.5)),url(images/slide1.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+
+.container .slider .slide.slide2{ 
+    background: linear-gradient(rgba(59, 59, 124, 0.5),rgba(58, 58, 128, 0.5)),url(images/slide2.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+
+.container .slider .slide.slide3{ 
+    background: linear-gradient(rgba(53, 53, 126, 0.5),rgba(32, 32, 82, 0.5)),url(images/slide3.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+
+.container .slider .slide.slide4{ 
+    background: linear-gradient(rgba(29, 29, 83, 0.5),rgba(18, 18, 56, 0.5)),url(images/slide4.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+ 
+@keyframes animate{
+    0%{
+       left: 0;
+    }
+    20%{
+       left: 0;
+    }
+    25%{
+       left: -100%;
+    }
+    45%{
+       left: -100%;
+    }
+    50%{
+       left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+       left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+
+
+/*-----footer-----*/
+.footer{
+    background-color: darkgray;
+}
+
+.footercontent{
+    height: 25vh;
+    display: flex;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.footercontent:hover{
+    background-color: rgb(104, 229, 233);
+}
+
+.physical h1{
+    color: blue;
+    font-size: 1rem;
+}
+
+.physical p{
+    color : rgb(236, 13, 124);
+    font-size: 1rem; 
+}
+
+.contacts h1{
+    color: blue;
+    font-size: 1rem; 
+}
+
+.contacts a{
+    color: rgb(72, 72, 190);
+    font-size: 1rem;
+}
+
+.contacts p{
+    color : rgb(236, 13, 169);
+    font-size: 1rem; 
+}
+
+
+.copyright{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+} 

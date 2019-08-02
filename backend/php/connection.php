@@ -1,10 +1,11 @@
 <?php
 $hostname="localhost";
 $username="root";  
-$password="";       
+$password=""; 
+$database="smart_environment";      
 
 
-$conn = new mysqli($hostname,$username,$password);
+$conn = new mysqli($hostname,$username,$password,$database);
 
 if($conn->connect_error)
 {

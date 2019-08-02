@@ -43,7 +43,7 @@ if(isset($_POST['password_1'] )){
 
      if ($client) {
     if ($client['name'] === $username) {
-        require("./index.php");
+        require("./index2.php");
       echo "<p class='redisplay'>Username already exists</p>";
       exit();
     }

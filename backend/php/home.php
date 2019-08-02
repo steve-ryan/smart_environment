@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./../../frontend/css/client.css">
     <script src="./../../frontend/js/jq.js"></script>
     <script src="./frontend/js/nav-php.js"></script>
-    <!-- <script src="./frontend/js/nav.js"></script> -->
     <script src="./../../frontend/js/jquery-3.4.1.min.js"></script>
     <script scr="./../../frontend/js/nav-php.js"></script>
 
@@ -21,7 +20,7 @@
     <div class="container-home">
         <div class="category-container">
             <div class="category-img">
-                <img src="./../../frontend/images/tubers.jpg" alt="medicinal" width="250px" height="320px" />
+                <img src="./../../frontend/images/medicinal1.jpg" alt="medicinal" width="250px" height="320px" />
             </div>
             <div class="category-body">
                 <h3>Medicinal</h3>
@@ -30,7 +29,7 @@
         </div>
         <div class="category-container">
             <div class="category-img">
-                <img src="./../../frontend/images/tubers.jpg" alt="indiginous" width="250px" height="320px" />
+                <img src="./../../frontend/images/indiginous.jpg" alt="indiginous" width="250px" height="320px" />
             </div>
             <div class="category-body">
                 <h3>Indiginous</h3>
@@ -39,7 +38,7 @@
         </div>
         <div class="category-container">
             <div class="category-img">
-                <img src="./../../frontend/images/tubers.jpg" alt="exotic" width="250px" height="320px" />
+                <img src="./../../frontend/images/exotic1.jpg" alt="exotic" width="250px" height="320px" />
             </div>
             <div class="category-body">
                 <h3>Exotic</h3>
@@ -48,7 +47,7 @@
         </div>
         <div class="category-container">
             <div class="category-img">
-                <img src="./../../frontend/images/tubers.jpg" alt="fruit" width="250px" height="320px" />
+                <img src="./../../frontend/images/fruit1.jpg" alt="fruit" width="250px" height="320px" />
             </div>
             <div class="category-body">
                 <h3>Fruits</h3>
