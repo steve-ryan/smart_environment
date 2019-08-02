@@ -54,7 +54,7 @@ include_once("connection.php");
                     </td>
                     <td data-th="Price"><?php echo $product['price']?></td>
                     <td data-th="Quantity">
-                        <input type="number" class="form-control text-center" name="quantity" value="1" min="1" rel="val">
+                        <input type="number" class="form-control text-center" name="quantity" rel="val">
                     </td>
                     <td data-th="Subtotal" class="text-center"><?php echo($product['price'] *2)?></td>
                     <td data-th="remove" class="text-center"><button type="button" class="remove-item" rel="remove-item">X</button></td>

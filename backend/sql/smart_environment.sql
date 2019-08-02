@@ -20,4 +20,8 @@ description TEXT NOT NULL,
 PRIMARY KEY(seedling_id)
 
 );
+
+CREATE TABLE IF NOT EXISTS admin(
+
+)
  

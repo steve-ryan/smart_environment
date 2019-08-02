@@ -18,23 +18,23 @@
         <form method="post" action="./../../backend/php/register.php">
             <div class="input-group">
               <label>Username</label>
-              <input type="text" name="username">
+              <input type="text" name="username" required>
             </div>
             <div class="input-group">
                 <label>Phone</label>
-                <input type="tel" name="phone" >
+                <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" name="phone" required >
               </div>
             <div class="input-group">
               <label>Email</label>
-              <input type="email" name="email" >
+              <input type="email" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required >
             </div>
             <div class="input-group">
               <label>Password</label>
-              <input type="password" name="password_1">
+              <input type="password" name="password_1" required>
             </div>
             <div class="input-group">
               <label>Confirm password</label>
-              <input type="password" name="password_2">
+              <input type="password" name="password_2" required>
             </div>
             <div class="input-group">
               <button type="submit" class="btn" name="reg_user" rel="reg_user"">Register</button>

@@ -33,7 +33,7 @@ if(isset($_POST['password_1'] )){
     
 
     if($password != $confirm_password){
-        require("./index.php");
+        require("./index2.php");
         echo "<p class='redisplay'>Your password values dont match</p>";
         exit();
     }
@@ -49,7 +49,7 @@ if(isset($_POST['password_1'] )){
     }
 
     if ($client['email'] === $email) {
-        require("./index.php");
+        require("./index2.php");
       echo "<p class='redisplay'>email already exists</p>";
       exit();
     }
