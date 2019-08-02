@@ -33,8 +33,10 @@ if(isset($_POST['password_1'] )){
     
 
     if($password != $confirm_password){
-        require("./index2.php");
+        // require("./index2.php");
         echo "<p class='redisplay'>Your password values dont match</p>";
+        require("./register_clients.php");
+        
         exit();
     }
     $client_check = "SELECT * FROM clients WHERE name='$username' OR email='$email' ";
@@ -44,13 +46,13 @@ if(isset($_POST['password_1'] )){
      if ($client) {
     if ($client['name'] === $username) {
         require("./index2.php");
-      echo "<p class='redisplay'>Username already exists</p>";
+      // echo "<p class='redisplay'>Username already exists</p>";
       exit();
     }
 
     if ($client['email'] === $email) {
-        require("./index2.php");
       echo "<p class='redisplay'>email already exists</p>";
+        require("./register_clients.php");
       exit();
     }
   }
