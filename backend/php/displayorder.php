@@ -50,7 +50,7 @@
                     </td>
                     <td data-th="Price"></td>
                     <td data-th="Quantity">
-                        <input type="number" class="form-control text-center" name="quantity" value="" min="1" id="valo" rel="valo">
+                        <input type="text" class="form-control text-center" name="quantity"  id="valo" rel="valo">
                     </td>
                     <td data-th="Subtotal" class="text-center"></td>
                     <td data-th="remove" class="text-center"><button type="button" class="remove-item" rel="remove-item"></button></td>
