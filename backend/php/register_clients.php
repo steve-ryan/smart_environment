@@ -18,26 +18,26 @@
         <form method="post" action="./../../backend/php/register.php">
             <div class="input-group">
               <label>Username</label>
-              <input type="text" name="username" required>
+              <input type="text" name="username" placeholder="Enter username" required>
             </div>
             <div class="input-group">
                 <label>Phone</label>
-                <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" name="phone" required >
+                <input type="tel" pattern="^\d{10}$" name="phone" placeholder="Enter phone number 0701112233" required >
               </div>
             <div class="input-group">
               <label>Email</label>
-              <input type="email" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required >
+              <input type="email" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" placeholder="example musomba@smt.com" required >
             </div>
             <div class="input-group">
               <label>Password</label>
-              <input type="password" name="password_1" required>
+              <input type="password" name="password_1" placeholder="Set password" required>
             </div>
             <div class="input-group">
               <label>Confirm password</label>
-              <input type="password" name="password_2" required>
+              <input type="password" name="password_2" placeholder="Confirm password" required>
             </div>
             <div class="input-group">
-              <button type="submit" class="btn" name="reg_user" rel="reg_user"">Register</button>
+              <button type="submit" class="btn" name="reg_user" rel="reg_user">Register</button>
             </div>
             <p>
                 Already a member? <a href="./../../backend/php/login_client.php" rel="regfro">Sign in</a>
