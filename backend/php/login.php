@@ -48,14 +48,16 @@ $conn=new mysqli($hostname,$username,$password,$database);
                     
 
                 }  elseif($user==="admin" && $pass==="admin"){
-                   // echo "logged as "+"admin";
-                    // require("./admin.php");
+                //     require("./admin.php"); 
+                //    echo "logged as "+"admin";
+                   
                     require ("./index2.php");
                     exit();
                     
                 } else{
-                  require("./index2.php");
-                echo "<p class='redisplay'>SIGN UP FIRST</p>";
+                    echo "<p class='redisplay'>SIGN UP FIRST</p>";
+                  require("./login.php");
+                
                 exit();
                 }
                
