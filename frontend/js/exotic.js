@@ -25,17 +25,16 @@ $(document).ready(()=>{
                     
                     '<div class="card"><div class="container-main"><img src="'+img+`" alt="image not found" class="card-img-top"  ></div></br>`+
                     `<div class="container" class="card-title"><p><h3>`+name+`</h3></p> </br><div rel="try">`+ details+`</div>`+
-                    `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details" /></br></br>`+
-                    `<input type="button" rel="buy" value="BUY" class="buy"/></div></div>`
+                    `<input type="button" rel="more-details" value="MORE DETAILS" class="more-details" /></br></br></div></div>`
                     ));
 
             });
 
-            $("[rel='buy']").on("click",()=>{
+            // $("[rel='buy']").on("click",()=>{
        
       
-                $("[rel='root-h']").load("./../../backend/php/displayorder.php");
-            });
+            //     $("[rel='root-h']").load("./../../backend/php/cart.php");
+            // });
 
             $("[rel='try']").hide();
 

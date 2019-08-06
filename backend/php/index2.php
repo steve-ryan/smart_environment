@@ -16,6 +16,7 @@
    <link rel="stylesheet" href="./../../frontend/css/admin.css">
    <link rel="stylesheet" href="./../../frontend/css/client.css">
    <link rel="stylesheet" href="./../../frontend/css/home.css">
+   <link rel="stylesheet" href="./../../frontend/css/shop.css">
    <script src="./../../frontend/js/jquery-3.4.1.min.js"></script>
    <script src="./../../frontend/js/jq.js"></script>
    <script src="./../../frontend/js/home-load.js"></script>
@@ -40,6 +41,10 @@
                     <a href="#" class="nav-item nav-link" rel="fruits">Fruits</a>
                     <a href="#" class="nav-item nav-link" rel="indiginious">Indiginous</a>
                 </div>
+                <div class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link" rel="shop">Shop</a>  
+                </div>
+                
             </div>
         </div>
     </nav>

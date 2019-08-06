@@ -15,6 +15,7 @@
             <h2>Register</h2>
         </div>
           
+        <div class="acc">
         <form method="post" action="./../../backend/php/register.php">
             <div class="input-group">
               <label>Username</label>
@@ -22,7 +23,7 @@
             </div>
             <div class="input-group">
                 <label>Phone</label>
-                <input type="tel" pattern="^\d{10}$" name="phone" placeholder="Enter phone number 0701112233" required >
+                <input type="tel" pattern="^\d{9}$" name="phone" placeholder="Enter phone number 0701112233" required >
               </div>
             <div class="input-group">
               <label>Email</label>
@@ -43,6 +44,7 @@
                 Already a member? <a href="./../../backend/php/login_client.php" rel="regfro">Sign in</a>
             </p>
         </form>
+        </div>
         
         
     </body>

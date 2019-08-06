@@ -74,7 +74,7 @@ $(document).ready(() => {
     });
     $("[rel='root']").load("./../../backend/php/indiginous_client.php");
   });
-  $("[rel='tree-ben']").on("click", () => {
+  $("[rel='shop']").on("click", () => {
     $("h2.log").css({
       "z-index": "10px",
       " color": "red",
@@ -83,7 +83,7 @@ $(document).ready(() => {
       "padding-left": "1220px",
       position: "relative"
     });
-    $("[rel='root']").load("./../../backend/php/fruit_client.php");
+    $("[rel='root']").load("./../../backend/php/cart.php");
   });
 
   $("[rel='btn-log']").on("click", () => {

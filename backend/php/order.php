@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 include_once("connection.php");
 ?>
 
@@ -79,4 +79,4 @@ include_once("connection.php");
     <script src="" async defer></script>
 </body>
 
-</html>
+</html> -->

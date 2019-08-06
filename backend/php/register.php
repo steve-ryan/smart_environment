@@ -1,4 +1,7 @@
 <?php
+include 'functions.php';
+
+
 require("./connection.php");
 $hostname="localhost";
 $username="root";
@@ -81,14 +84,18 @@ if($conn->query($tbl)===TRUE){
 }
 
 //prepare statement for various registration of clients
-
+$t = time();
 $state=$conn->prepare("INSERT INTO clients(name,phone_no,email,password)
 VALUES(?,?,?,?)");
 
 
 
 $state->bind_param("siss",$username,$phone,$email,$encry);
+$up = "254".$phone;
+$m = "Hi ".$username." "." Welcome to Smart Environment. You've been successfully registered. 
+Username:".$username." "."password:".$password." ";
 
+ sms($up,$m);
 //setting parameters to be executed
 if(isset($_POST['username'])&& isset($_POST['phone'])){
 
