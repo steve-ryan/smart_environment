@@ -45,30 +45,30 @@ $conn=new mysqli($hostname,$username,$password,$database);
         
           
               
-             $query=$conn->query("SELECT * FROM clients WHERE name='".$username."' and password='".$passhash."'LIMIT 3 ");
-             $query2=$conn->query("SELECT * FROM clients WHERE name='".$username."' and password='".$passhash."' LIMIT 3 ");
+             $query=$conn->query("SELECT * FROM clients WHERE name='".$username."' and password='".$passhash."' ");
+             $query2=$conn->query("SELECT * FROM admin WHERE name='".$username."' and password='".$password."' ");
             // $result=mysqli_fetch_array($query,MYSQLI_ASSOC);
              $row=$query->fetch_assoc();
              $row1=$query2->fetch_assoc();
-             echo json_encode($row);
+             //echo json_encode($row);
         
             // $res=$query->fetch_assoc();
             if($username===$row1['name']){
-                if($passhash===$row1['password']){
+                if($password===$row1['password']){
                 require ("./admin.php");
                 exit();
                 }    
 
             }
-        //    elseif($username===$row['name']){
-        //         if($passhash===$row['password']){
-        //             require ("./index2.php");
-        //             exit();
-        //         }
-        //     }
+           elseif($username===$row['name']){
+                if($passhash===$row['password']){
+                    require ("./index2.php");
+                    exit();
+                }
+            } else{
             echo "Wrong credentials"."<a href='login_client.php'>please try again</a>";
             exit();
-           
+            }
         
 
 
